@@ -1,0 +1,30 @@
+# 应用名称
+spring:
+  application:
+    name: spring-boot-ehcache-demo
+  # 应用服务 WEB 访问端口
+  cache:
+    ehcache:
+      config: classpath:/ehcache.xml
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/bigdata?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Hongkong
+    username: root
+    password: DQcIih}L9}xp
+
+#    tomcat:
+#      max-active: 20
+#      min-idle: 8
+#      max-wait: 3000
+#      max-idle: 16
+
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*.xml
+  type-aliases-package: com.hnust.entity
+
+server:
+  port: 8081
+
+logging:
+  level:
+    root: debug
